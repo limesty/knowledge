@@ -1,0 +1,280 @@
+{
+  "main": {
+    "id": "25f4cc8f077230c0",
+    "type": "split",
+    "children": [
+      {
+        "id": "8ddc8a7524d5532c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4a36c632f82a9c18",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "笔记/🎛️ 操作系统/🪟 Windows/为在 Hyper-V 上运行的 Ubuntu 18.04 虚拟机修复卡顿、提高刷新率和提供可变分辨率.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3698b8c616aabcfc",
+    "type": "split",
+    "children": [
+      {
+        "id": "b15e2c7929b2a46a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b5dfc4e6c8287ee4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d5332c2bfa4468de",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "xid",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f568bf7e439d398b",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "955041b03cbffb02",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          },
+          {
+            "id": "0972447421cfef3d",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 350.5
+  },
+  "right": {
+    "id": "246bd0838f8f40a6",
+    "type": "split",
+    "children": [
+      {
+        "id": "166ecf9eee3475b0",
+        "type": "tabs",
+        "dimension": 31.92019950124688,
+        "children": [
+          {
+            "id": "d9c447a5c56d10b5",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "笔记/🎛️ 操作系统/🪟 Windows/为在 Hyper-V 上运行的 Ubuntu 18.04 虚拟机修复卡顿、提高刷新率和提供可变分辨率.md",
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": true,
+                  "showTags": true,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": false,
+                  "colorGroups": [],
+                  "collapse-display": false,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 0.9960205078125,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": false,
+                  "centerStrength": 0.298746744791667,
+                  "repelStrength": 13.7809244791667,
+                  "linkStrength": 1,
+                  "linkDistance": 30,
+                  "scale": 1.3428153072212992,
+                  "close": true
+                }
+              }
+            }
+          },
+          {
+            "id": "d05b2adb58e8f322",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          },
+          {
+            "id": "dedba0695c22f869",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "笔记/🎛️ 操作系统/🪟 Windows/为在 Hyper-V 上运行的 Ubuntu 18.04 虚拟机修复卡顿、提高刷新率和提供可变分辨率.md"
+              }
+            }
+          },
+          {
+            "id": "2ac176b8dbb5d7eb",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "00f8f8ad2cb9f9b0",
+        "type": "tabs",
+        "dimension": 68.07980049875312,
+        "children": [
+          {
+            "id": "ccb7652bb733a848",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "笔记/🎛️ 操作系统/🪟 Windows/为在 Hyper-V 上运行的 Ubuntu 18.04 虚拟机修复卡顿、提高刷新率和提供可变分辨率.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5f488e06357db2c6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "笔记/🎛️ 操作系统/🪟 Windows/为在 Hyper-V 上运行的 Ubuntu 18.04 虚拟机修复卡顿、提高刷新率和提供可变分辨率.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "109c669fb0e4b88f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 368.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "4a36c632f82a9c18",
+  "lastOpenFiles": [
+    "toc.md",
+    "Untitled.canvas",
+    "2024-03-31.md",
+    "笔记/☀️ 生活/🏠 租房/租房流程.md",
+    "笔记/🧱 基础设施/🚢 Kubernetes/在 Kubernetes 集群上的 GPU 掉卡和故障排查.md",
+    "笔记/📃 Archives/📖 文章/微信公众号文章/why技术/【求锤得锤的故事】Redis锁从面试连环炮聊到神仙打架。.md",
+    "笔记/🧱 基础设施/🚢 Kubernetes/通过 Kubeadm 部署 Kubernetes 集群的时候的问题排查.md",
+    "笔记/🤖 AI 人工智能/用 PyTorch Lightning 监控和串流 PyTorch 的训练进度.md",
+    "笔记/🤖 AI 人工智能/用 Megatron-LM 训练一个 GPT-2.md",
+    "笔记/🛠️ 开发/用兼容性更好，体积更小的 Rive 渲染和播放 Lottie 动画.md",
+    "vite.config.ts.timestamp-1711618957486-d3ed87f76ac4e.mjs",
+    "未命名.md",
+    "编目 Catalog/番剧/迷宮飯（2024）.md",
+    "编目 Catalog/番剧/葬送的芙莉莲（2023）.md",
+    "编目 Catalog/番剧/渴求游戏之神（2024）.md",
+    "编目 Catalog/番剧/末班列车去哪里？（2024）.md",
+    "编目 Catalog/番剧/怪异与少女与神隐（2024）.md",
+    "编目 Catalog/番剧/夜晚的水母不游泳（2024）.md",
+    "编目 Catalog/番剧",
+    "笔记/🪄 Vtuber/在 macOS 上不同的 VTuber 直播方案.md",
+    "笔记/🪄 Vtuber/assets/屏幕录制2023-12-08 23.37.26.mov",
+    "笔记/🪄 Vtuber/assets/Pasted image 20231212122507.png",
+    "笔记/🪄 Vtuber/assets/Pasted image 20231212122502.png",
+    "笔记/🪄 Vtuber/assets/Pasted image 20231209163759.png",
+    "笔记/🪄 Vtuber/assets/Pasted image 20231209163219.png",
+    "笔记/🪄 Vtuber/assets/Pasted image 20231209163146.png",
+    "笔记/🪄 Vtuber/assets/Pasted image 20231209163110.jpg",
+    "笔记/🪄 Vtuber/assets/Pasted image 20231208233938.png",
+    "笔记/🪄 Vtuber/assets/Pasted image 20231208233927.png",
+    "笔记/🪄 Vtuber/assets/Pasted image 20231208233632.png",
+    "笔记/🧶 手作/布艺和裁缝/术语及词汇表.md",
+    "笔记/🧶 手作/术语及词汇表.md",
+    "笔记/🧶 手作/手缝针法.md",
+    "笔记/🧶 手作/布艺和裁缝",
+    "笔记/🧶 手作",
+    "笔记/🧱 基础设施/🚢 Kubernetes/面向 Kubernetes 开发.md",
+    "笔记/🧱 基础设施/🚢 Kubernetes/迁移持久卷.md",
+    "笔记/🧱 基础设施/🚢 Kubernetes/用方便好用的工具快速创建测试用的集群.md",
+    "笔记/🧱 基础设施/🚢 Kubernetes/概念/节点亲和力 Node Affinity.md",
+    "笔记/🧱 基础设施/🚢 Kubernetes/概念/污点 Taint.md",
+    "笔记/🧱 基础设施/🚢 Kubernetes/概念/容忍度 Toleration.md",
+    "笔记/🧮 数学",
+    "笔记/🧩 开源贡献/Kubernetes/assets/before-begin-easy-cla-sign-screenshot-3.png",
+    "笔记/🧩 开源贡献/Kubernetes/assets",
+    "笔记/🤖 AI 人工智能/assets/量子位智库AIGC产业全景图报告.pdf",
+    "笔记/🤖 AI 人工智能/assets/《GPT_4，通用人工智能的火花》论文内容精选与翻译_.pdf",
+    "笔记/🤖 AI 人工智能/assets/midjourney辞典.pdf",
+    "未命名.canvas"
+  ]
+}
