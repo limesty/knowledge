@@ -28,12 +28,12 @@ const getAvatarUrl = (name: string) => `https://github.com/${name}.png`
 export const creators: Creators[] = [
   {
     name: '芷沐沐',
-    avatar: creatorAvatars.limesty,
-    username: 'limesty',
+    avatar: creatorAvatars.Limesty,
+    username: 'Limesty',
     title: 'www',
     desc: 'www',
     links: [
-      { type: 'github', icon: 'github', link: 'https://github.com/limesty' },
+      { type: 'github', icon: 'github', link: 'https://github.com/Limesty' },
       { type: 'twitter', icon: 'twitter', link: 'https://twitter.com/limestty' },
     ],
     nameAliases: ['芷沐沐'],
