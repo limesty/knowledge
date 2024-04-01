@@ -18,7 +18,7 @@ hero:
       link: /笔记/index
     - theme: alt
       text: GitHub 上浏览
-      link: https://github.com/nolebase/nolebase
+      link: https://github.com/Limesty/knowledge
 
 features:
   - title: 多样的主题和内容
