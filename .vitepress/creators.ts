@@ -27,7 +27,7 @@ const getAvatarUrl = (name: string) => `https://github.com/${name}.png`
 
 export const creators: Creators[] = [
   {
-    name: 'Limesty',
+    name: '芷沐沐',
     avatar: creatorAvatars.Limesty,
     username: 'Limesty',
     title: 'www',
