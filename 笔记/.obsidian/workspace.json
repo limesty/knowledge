@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e5282e1e6addbff3",
+        "id": "de1b7c079b80b928",
         "type": "tabs",
         "children": [
           {
-            "id": "ecf3b715e45a5f59",
+            "id": "cda75a01f41c0ea0",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -139,7 +139,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "ecf3b715e45a5f59",
+  "active": "cda75a01f41c0ea0",
   "lastOpenFiles": [
     "🎓 学习/心理统计/回归初步.md",
     "🎓 学习/心理统计/心理统计.md",
