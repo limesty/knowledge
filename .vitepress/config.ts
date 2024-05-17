@@ -4,15 +4,27 @@ import MarkdownItFootnote from 'markdown-it-footnote'
 import MarkdownItMathjax3 from 'markdown-it-mathjax3'
 
 import { BiDirectionalLinks } from '@nolebase/markdown-it-bi-directional-links'
-import type { Options as ElementTransformOptions } from '@nolebase/markdown-it-element-transform'
-import { ElementTransform } from '@nolebase/markdown-it-element-transform'
-import { buildEndGenerateOpenGraphImages } from '@nolebase/vitepress-plugin-og-image'
+import { InlineLinkPreviewElementTransform } from '@nolebase/vitepress-plugin-inline-link-preview/markdown-it'
+import { buildEndGenerateOpenGraphImages } from '@nolebase/vitepress-plugin-og-image/vitepress'
+import { UnlazyImages } from '@nolebase/markdown-it-unlazy-img'
 
-import { githubRepoLink, siteDescription, siteName, targetDomain } from '../metadata'
+import { discordLink, githubRepoLink, siteDescription, siteName, targetDomain } from '../metadata'
 import { creatorNames, creatorUsernames } from './creators'
 import { sidebar } from './docsMetadata.json'
 
 export default defineConfig({
+  vue: {
+    template: {
+      transformAssetUrls: {
+        video: ['src', 'poster'],
+        source: ['src'],
+        img: ['src'],
+        image: ['xlink:href', 'href'],
+        use: ['xlink:href', 'href'],
+        NolebaseUnlazyImg: ['src'],
+      },
+    },
+  },
   lang: 'zh-CN',
   title: siteName,
   description: siteDescription,
@@ -109,6 +121,9 @@ export default defineConfig({
       name: 'msapplication-TileColor',
       content: '#603cba',
     }],
+    // Proxying Plausible through Netlify | Plausible docs
+    // https://plausible.io/docs/proxy/guides/netlify
+    ['script', { 'defer': 'true', 'data-domain': 'nolebase.ayaka.io', 'data-api': '/api/v1/page-external-data/submit', 'src': '/assets/page-external-data/js/script.js' }],
   ],
   themeConfig: {
     outline: { label: '页面大纲', level: 'deep' },
@@ -119,6 +134,7 @@ export default defineConfig({
     },
     socialLinks: [
       { icon: 'github', link: githubRepoLink },
+      { icon: 'discord', link: discordLink },
     ],
     footer: {
       message: '用 <span style="color: #e25555;">&#9829;</span> 撰写',
@@ -146,6 +162,49 @@ export default defineConfig({
             },
           },
         },
+
+        // Add title ang tags field in frontmatter to search
+        // You can exclude a page from search by adding search: false to the page's frontmatter.
+        _render(src, env, md) {
+          // without `md.render(src, env)`, the some information will be missing from the env.
+          let html = md.render(src, env)
+          let tagsPart = ''
+          let headingPart = ''
+          let contentPart = ''
+          let fullContent = ''
+          const sortContent = () => [headingPart, tagsPart, contentPart] as const
+          let { frontmatter, content } = env
+
+          if (!frontmatter)
+            return html
+
+          if (frontmatter.search === false)
+            return ''
+
+          contentPart = content ||= src
+
+          const headingMatch = content.match(/^#{1} .*/m)
+          const hasHeading = !!(headingMatch && headingMatch[0] && headingMatch.index !== undefined)
+
+          if (hasHeading) {
+            const headingEnd = headingMatch.index! + headingMatch[0].length
+            headingPart = content.slice(0, headingEnd)
+            contentPart = content.slice(headingEnd)
+          }
+          else if (frontmatter.title) {
+            headingPart = `# ${frontmatter.title}`
+          }
+
+          const tags = frontmatter.tags
+          if (tags && Array.isArray(tags) && tags.length)
+            tagsPart = `Tags: #${tags.join(', #')}`
+
+          fullContent = sortContent().filter(Boolean).join('\n\n')
+
+          html = md.render(fullContent, env)
+
+          return html
+        },
       },
     },
     nav: [
@@ -167,29 +226,12 @@ export default defineConfig({
       md.use(BiDirectionalLinks({
         dir: process.cwd(),
       }))
-      md.use(ElementTransform, (() => {
-        let transformNextLinkCloseToken = false
-
-        return {
-          transform(token) {
-            switch (token.type) {
-              case 'link_open':
-                if (token.attrGet('class') !== 'header-anchor') {
-                  token.tag = 'VPNolebaseInlineLinkPreview'
-                  transformNextLinkCloseToken = true
-                }
-                break
-              case 'link_close':
-                if (transformNextLinkCloseToken) {
-                  token.tag = 'VPNolebaseInlineLinkPreview'
-                  transformNextLinkCloseToken = false
-                }
-
-                break
-            }
-          },
-        } as ElementTransformOptions
-      })())
+      md.use(UnlazyImages(), {
+        imgElementTag: 'NolebaseUnlazyImg',
+      })
+      md.use(InlineLinkPreviewElementTransform, {
+        tag: 'VPNolebaseInlineLinkPreview',
+      })
     },
   },
   async buildEnd(siteConfig) {

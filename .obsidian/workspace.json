@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "8ddc8a7524d5532c",
+        "id": "ae994d6d2a7605fc",
         "type": "tabs",
         "children": [
           {
-            "id": "4a36c632f82a9c18",
+            "id": "c01998b6274879fd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "笔记/🎛️ 操作系统/🪟 Windows/为在 Hyper-V 上运行的 Ubuntu 18.04 虚拟机修复卡顿、提高刷新率和提供可变分辨率.md",
+                "file": "笔记/🛠️ 开发/語 编程语言/🐍 Python/各种 pip 包和 conda 包的名称都是什么含义？.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,10 +48,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "xid",
+                "query": "基础设施 AWS",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
@@ -85,7 +85,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5
+    "width": 313.50390243530273
   },
   "right": {
     "id": "246bd0838f8f40a6",
@@ -102,7 +102,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "笔记/🎛️ 操作系统/🪟 Windows/为在 Hyper-V 上运行的 Ubuntu 18.04 虚拟机修复卡顿、提高刷新率和提供可变分辨率.md",
+                "file": "笔记/🛠️ 开发/語 编程语言/🐍 Python/各种 pip 包和 conda 包的名称都是什么含义？.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -125,7 +125,7 @@
                   "repelStrength": 13.7809244791667,
                   "linkStrength": 1,
                   "linkDistance": 30,
-                  "scale": 1.3428153072212992,
+                  "scale": 1.9885368456908947,
                   "close": true
                 }
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "笔记/🎛️ 操作系统/🪟 Windows/为在 Hyper-V 上运行的 Ubuntu 18.04 虚拟机修复卡顿、提高刷新率和提供可变分辨率.md"
+                "file": "笔记/🛠️ 开发/語 编程语言/🐍 Python/各种 pip 包和 conda 包的名称都是什么含义？.md"
               }
             }
           },
@@ -174,7 +174,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "笔记/🎛️ 操作系统/🪟 Windows/为在 Hyper-V 上运行的 Ubuntu 18.04 虚拟机修复卡顿、提高刷新率和提供可变分辨率.md",
+                "file": "笔记/🛠️ 开发/語 编程语言/🐍 Python/各种 pip 包和 conda 包的名称都是什么含义？.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -191,7 +191,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "笔记/🎛️ 操作系统/🪟 Windows/为在 Hyper-V 上运行的 Ubuntu 18.04 虚拟机修复卡顿、提高刷新率和提供可变分辨率.md",
+                "file": "笔记/🛠️ 开发/語 编程语言/🐍 Python/各种 pip 包和 conda 包的名称都是什么含义？.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -213,40 +213,37 @@
       }
     ],
     "direction": "horizontal",
-    "width": 368.5,
-    "collapsed": true
+    "width": 362.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "obsidian-spaced-repetition:复习卡片": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "markdown-importer:打开 Markdown 格式转换器": false,
+      "random-note:开始漫游笔记": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian42-brat:BRAT": false
     }
   },
-  "active": "4a36c632f82a9c18",
+  "active": "c01998b6274879fd",
   "lastOpenFiles": [
-    "toc.md",
-    "Untitled.canvas",
-    "2024-03-31.md",
-    "笔记/☀️ 生活/🏠 租房/租房流程.md",
-    "笔记/🧱 基础设施/🚢 Kubernetes/在 Kubernetes 集群上的 GPU 掉卡和故障排查.md",
-    "笔记/📃 Archives/📖 文章/微信公众号文章/why技术/【求锤得锤的故事】Redis锁从面试连环炮聊到神仙打架。.md",
-    "笔记/🧱 基础设施/🚢 Kubernetes/通过 Kubeadm 部署 Kubernetes 集群的时候的问题排查.md",
+    "node_modules/@vueuse",
+    "pnpm-lock.yaml.3768216865",
+    "node_modules/@nolebase",
+    "node_modules/@antfu",
+    "笔记/🧱 基础设施/🛜 OpenWRT/从 openclash 迁移到 sing-box.md",
+    "笔记/🧱 基础设施/容器里没有 ps 怎么办？.md",
     "笔记/🤖 AI 人工智能/用 PyTorch Lightning 监控和串流 PyTorch 的训练进度.md",
-    "笔记/🤖 AI 人工智能/用 Megatron-LM 训练一个 GPT-2.md",
-    "笔记/🛠️ 开发/用兼容性更好，体积更小的 Rive 渲染和播放 Lottie 动画.md",
-    "vite.config.ts.timestamp-1711618957486-d3ed87f76ac4e.mjs",
-    "未命名.md",
-    "编目 Catalog/番剧/迷宮飯（2024）.md",
-    "编目 Catalog/番剧/葬送的芙莉莲（2023）.md",
-    "编目 Catalog/番剧/渴求游戏之神（2024）.md",
-    "编目 Catalog/番剧/末班列车去哪里？（2024）.md",
-    "编目 Catalog/番剧/怪异与少女与神隐（2024）.md",
-    "编目 Catalog/番剧/夜晚的水母不游泳（2024）.md",
-    "编目 Catalog/番剧",
+    "笔记/🤖 AI 人工智能/验证 Anaconda 和 Mamba 安装的 PyTorch 和 CUDA 是否正确.md",
+    "笔记/🤖 AI 人工智能/配置 CUDA 的一万种方法.md",
+    "笔记/🤖 AI 人工智能/安装和配置 NVIDIA 的 Apex.md",
+    "笔记/🛠️ 开发/語 编程语言/🐍 Python/配置 Anaconda 的环境目录和包目录.md",
+    "README.md",
     "笔记/🪄 Vtuber/在 macOS 上不同的 VTuber 直播方案.md",
     "笔记/🪄 Vtuber/assets/屏幕录制2023-12-08 23.37.26.mov",
     "笔记/🪄 Vtuber/assets/Pasted image 20231212122507.png",
@@ -258,20 +255,26 @@
     "笔记/🪄 Vtuber/assets/Pasted image 20231208233938.png",
     "笔记/🪄 Vtuber/assets/Pasted image 20231208233927.png",
     "笔记/🪄 Vtuber/assets/Pasted image 20231208233632.png",
-    "笔记/🧶 手作/布艺和裁缝/术语及词汇表.md",
-    "笔记/🧶 手作/术语及词汇表.md",
-    "笔记/🧶 手作/手缝针法.md",
-    "笔记/🧶 手作/布艺和裁缝",
-    "笔记/🧶 手作",
-    "笔记/🧱 基础设施/🚢 Kubernetes/面向 Kubernetes 开发.md",
-    "笔记/🧱 基础设施/🚢 Kubernetes/迁移持久卷.md",
-    "笔记/🧱 基础设施/🚢 Kubernetes/用方便好用的工具快速创建测试用的集群.md",
-    "笔记/🧱 基础设施/🚢 Kubernetes/概念/节点亲和力 Node Affinity.md",
-    "笔记/🧱 基础设施/🚢 Kubernetes/概念/污点 Taint.md",
-    "笔记/🧱 基础设施/🚢 Kubernetes/概念/容忍度 Toleration.md",
+    "笔记/🧱 基础设施/🛜 OpenWRT",
+    "笔记/🧱 基础设施/🚢 Kubernetes/开发一个 Kubernetes Controller.md",
+    "笔记/🧱 基础设施/🚢 Kubernetes/将 TrueNAS 共享存储连接到 K8s 集群.md",
+    "笔记/🧱 基础设施/🚢 Kubernetes/kubectl 速查表.md",
+    "笔记/🧱 基础设施/🚢 Kubernetes/Pod 错误排查之.md",
+    "笔记/🧱 基础设施/云上集群的 GPU.md",
+    "笔记/🧮 数学/空洞的想法.md",
     "笔记/🧮 数学",
+    "笔记/🧩 开源贡献/Kubernetes/开始之前.md",
     "笔记/🧩 开源贡献/Kubernetes/assets/before-begin-easy-cla-sign-screenshot-3.png",
     "笔记/🧩 开源贡献/Kubernetes/assets",
+    "笔记/🤖 AI 人工智能/通过阅读 dlrover 源码学习训练时的自动冗灾恢复和 checkpoint 同步加速.md",
+    "笔记/🤖 AI 人工智能/论文和源码解析：S-LoRA - Serving Thousands of Concurrent LoRA Adapters.md",
+    "笔记/🤖 AI 人工智能/用 FastEdit 微调大模型.md",
+    "笔记/🤖 AI 人工智能/机器学习生态研究报告.md",
+    "笔记/🤖 AI 人工智能/提示工程 Prompt Engineering/最佳实践.md",
+    "笔记/🤖 AI 人工智能/提示工程 Prompt Engineering/提示工程工具.md",
+    "笔记/🤖 AI 人工智能/提示工程 Prompt Engineering/学习和参考最佳实践.md",
+    "笔记/🤖 AI 人工智能/扩散模型是如何工作的？.md",
+    "笔记/🤖 AI 人工智能/大规模分布式机器学习里的断卡重训和故障恢复.md",
     "笔记/🤖 AI 人工智能/assets/量子位智库AIGC产业全景图报告.pdf",
     "笔记/🤖 AI 人工智能/assets/《GPT_4，通用人工智能的火花》论文内容精选与翻译_.pdf",
     "笔记/🤖 AI 人工智能/assets/midjourney辞典.pdf",
