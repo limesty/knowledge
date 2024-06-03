@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🎓 学习/心理统计/集中量数与差异量数.md",
+                "file": "🎓 学习/心理统计/z 分数、概率、正态分布和二项分布.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🎓 学习/心理统计/集中量数与差异量数.md",
+                "file": "🎓 学习/心理统计/z 分数、概率、正态分布和二项分布.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🎓 学习/心理统计/集中量数与差异量数.md",
+                "file": "🎓 学习/心理统计/z 分数、概率、正态分布和二项分布.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🎓 学习/心理统计/集中量数与差异量数.md"
+                "file": "🎓 学习/心理统计/z 分数、概率、正态分布和二项分布.md"
               }
             }
           }
@@ -150,8 +150,12 @@
   "active": "cda75a01f41c0ea0",
   "lastOpenFiles": [
     "🎓 学习/心理统计/心理统计.md",
+    "🎓 学习/心理统计/集中量数与差异量数.md",
     "🎓 学习/心理统计/次数分布.md",
     "🎓 学习/心理统计/插值法1.svg",
+    "🎓 学习/心理统计/pic/插值法1.svg",
+    "🎓 学习/心理统计/pic",
+    "🎓 学习/心理统计/新建文件夹",
     "🎓 学习/心理统计/统计和度量的基本概念.md",
     "Pasted image 20240429200753.png",
     "🎓 学习/原子物理学/原子物理学.md",
@@ -180,10 +184,8 @@
     "🎓 学习/线性代数",
     "🎓 学习/心理统计/z 分数、概率、正态分布和二项分布.md",
     "🎓 学习/心理统计/总体参数的估计.md",
-    "🎓 学习/心理统计/样本均值的分布与假设检验初步.md",
     "💻软件",
     "🎓 学习/实验心理学",
-    "🎓 学习/生理心理学",
-    "🎓 学习/认知心理学"
+    "🎓 学习/生理心理学"
   ]
 }
