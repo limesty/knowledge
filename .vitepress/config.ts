@@ -9,7 +9,7 @@ import { buildEndGenerateOpenGraphImages } from '@nolebase/vitepress-plugin-og-i
 import { UnlazyImages } from '@nolebase/markdown-it-unlazy-img'
 import { transformHeadMeta } from '@nolebase/vitepress-plugin-meta'
 
-import { creatorNames, creatorUsernames, discordLink, githubRepoLink, siteDescription, siteName, targetDomain } from '../metadata'
+import { creatorNames, creatorUsernames, githubRepoLink, siteDescription, siteName, targetDomain } from '../metadata'
 import { sidebar } from './docsMetadata.json'
 
 export default defineConfig({
@@ -134,7 +134,6 @@ export default defineConfig({
     },
     socialLinks: [
       { icon: 'github', link: githubRepoLink },
-      { icon: 'discord', link: discordLink },
     ],
     footer: {
       message: '用 <span style="color: #e25555;">&#9829;</span> 撰写',
