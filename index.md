@@ -17,11 +17,8 @@ hero:
       text: 开始阅读
       link: /笔记/index
     - theme: alt
-      text: 加入 Discord 服务器
-      link: https://discord.gg/XuNFDcDZGj
-    - theme: alt
       text: GitHub 上浏览
-      link: https://github.com/Limesty/knowledge
+      link: https://github.com/limesty/knowledge
 
 features:
   - title: 多样的主题和内容

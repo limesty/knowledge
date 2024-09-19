@@ -10,9 +10,7 @@ export const siteDescription = '记录回忆，知识和畅想的地方'
 export const include = ['笔记', '生活']
 
 /** Repo */
-export const githubRepoLink = 'https://github.com/Limesty/knowledge'
-/** Discord */
-export const discordLink = 'https://discord.gg/XuNFDcDZGj'
+export const githubRepoLink = 'https://github.com/limesty/knowledge'
 
 /** 无协议前缀域名 */
 export const plainTargetDomain = 'n.limesty.moe'
@@ -28,7 +26,7 @@ export const creators: Creator[] = [
     title: 'www',
     desc: 'www',
     links: [
-      { type: 'github', icon: 'github', link: 'https://github.com/Limesty' },
+      { type: 'github', icon: 'github', link: 'https://github.com/limesty' },
       { type: 'twitter', icon: 'twitter', link: 'https://twitter.com/limestty' },
     ],
     nameAliases: ['芷沐', 'limesty'],
