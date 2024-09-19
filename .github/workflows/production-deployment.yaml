@@ -1,0 +1,66 @@
+name: 构建并部署到 Cloudflare
+
+on:
+  push:
+    branches:
+      - 'main'
+  workflow_dispatch:
+
+env:
+  STORE_PATH: ''
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Ubuntu 构建和推送
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    steps:
+      - name: 签出代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 安装 Node.js 22.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 22.x
+
+      - name: 安装 pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          run_install: false
+
+      - name: 获取 pnpm store 目录
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+      - name: 配置 pnpm 缓存
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: 安装依赖
+        run: pnpm install --frozen-lockfile
+
+      - name: 构建
+        run: pnpm docs:build
+
+      - name: 推送到 Cloudflare
+        timeout-minutes: 10
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: knowledge # e.g. 'my-project'
+          directory: .vitepress/dist # e.g. 'dist'
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
