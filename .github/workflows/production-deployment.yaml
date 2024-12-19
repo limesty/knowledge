@@ -27,14 +27,15 @@ jobs:
           fetch-depth: 0
 
       - name: 安装 Node.js 22.x
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 22.x
 
       - name: 安装 pnpm
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v3
         with:
           run_install: false
+          version: 9
 
       - name: 获取 pnpm store 目录
         shell: bash
@@ -57,10 +58,9 @@ jobs:
 
       - name: 推送到 Cloudflare
         timeout-minutes: 10
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: knowledge # e.g. 'my-project'
-          directory: .vitepress/dist # e.g. 'dist'
+          command: pages deploy .vitepress/dist --project-name=knowledge
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
