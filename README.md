@@ -26,7 +26,7 @@
 
 ## 声明
 
-本仓库是本人部署的 [Nólëbase](https://nolebase.ayaka.io) ！
+本仓库是本人部署的 [Nólëbase](https://nolebase.ayaka.io/zh-CN) 实例！
 
 本仓库代码以 [MIT License][mit] 协议发布
 
