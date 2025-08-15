@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MRI/常用软件/AFNI.md",
+                "file": "MRI/相关资料.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AFNI"
+              "title": "相关资料"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MRI/常用软件/AFNI.md",
+                "file": "MRI/相关资料.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "AFNI 的大纲"
+              "title": "相关资料 的大纲"
             }
           }
         ],
@@ -168,16 +168,18 @@
   },
   "active": "0da0c6194c62741f",
   "lastOpenFiles": [
+    "MRI/常用软件/FreeSurfer.md",
+    "MRI/常用软件/FSL.md",
+    "MRI/相关资料.md",
+    "MRI/常用软件/AFNI.md",
     "💻 软件/markdown/markdown.md",
     "💻 软件/latex/latex.md",
     "MRI/常用工具/dcm2niix.md",
     "MRI/常用工具/dcm2bids.md",
     "MRI/常用工具/MRIQC.md",
     "MRI/常用软件/fMRIPrep.md",
-    "MRI/常用软件/AFNI.md",
     "MRI/常用软件/ANTs.md",
     "MRI/常用工具",
-    "MRI/常用软件/FSL.md",
     "MRI/质量控制/自动化质控.md",
     "MRI/质量控制/人工质控.md",
     "index.md",
@@ -197,8 +199,6 @@
     "🎓 学习/心理测量与评估/第11章 能力测验II.md",
     "🎓 学习/心理测量与评估/第14章 其他心理测验与评估.md",
     "🎓 学习/心理测量与评估/第15章 职业测验.md",
-    "🎓 学习/心理测量与评估/第16章 测验理论与应用进展.md",
-    "🎓 学习/心理测量与评估/第13章 临床心理测验.md",
     "💻 软件/markdown/markdown",
     "💻 软件/markdown",
     "🎓 学习/心理语言学",
