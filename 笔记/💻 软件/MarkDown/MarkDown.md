@@ -1,4 +1,4 @@
-# markdown
+# MarkDown
 
 加粗遇到中文标点的解决方法：
 ```

@@ -11,6 +11,8 @@ MRIQC: Advancing the automatic prediction of image quality in MRI from unseen si
 
 [https://mriqc.readthedocs.io/en/latest/](https://mriqc.readthedocs.io/en/latest/)
 
+[Introduction to MRIQC](https://www.youtube.com/watch?v=In6Dez_uuxQ)
+
 ### 安装方法
 
 
