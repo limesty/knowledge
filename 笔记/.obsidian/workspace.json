@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MRI/常用软件/fMRIPrep.md",
+                "file": "实践/实践.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "fMRIPrep"
+              "title": "实践"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MRI/常用软件/fMRIPrep.md",
+                "file": "实践/实践.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "fMRIPrep 的大纲"
+              "title": "实践 的大纲"
             }
           }
         ],
@@ -169,8 +169,18 @@
   },
   "active": "0da0c6194c62741f",
   "lastOpenFiles": [
-    "实践/综述.md",
+    "🎓 学习/社会心理学/第1章 社会心理学导论.md",
+    "🎓 学习/社会心理学/社会心理学.md",
+    "🎓 学习/社会心理学",
+    "🎓 学习/概率论与数理统计/第1章 基本概念.md",
+    "🎓 学习/概率论与数理统计/概率论.md",
+    "🎓 学习/概率论与数理统计",
+    "🎓 学习/心理病理学/第1章 心理病理学绪论.md",
+    "🎓 学习/心理病理学",
+    "🎓 学习/心理咨询与治疗/第1课 如何成为一名心理咨询师.md",
+    "🎓 学习/心理咨询与治疗",
     "MRI/常用软件/fMRIPrep.md",
+    "实践/综述.md",
     "MRI/常用软件/FreeSurfer.md",
     "MRI/常用软件/FSL.md",
     "MRI/相关资料.md",
@@ -194,17 +204,6 @@
     "MRI/常用软件",
     "MRI",
     "㊙️科研实践/科研实践.md",
-    "实践",
-    "🎓 学习/心理测量与评估/第8章 测验的设计和编制.md",
-    "🎓 学习/心理测量与评估/第3章 信度.md",
-    "🎓 学习/心理测量与评估/第1章 心理测量与评估导论.md",
-    "🎓 学习/心理测量与评估/第0章 课程介绍.md",
-    "🎓 学习/心理测量与评估/第5章 测验的项目分析.md",
-    "🎓 学习/心理测量与评估/第4章 效度.md",
-    "🎓 学习/心理测量与评估/第2章 测量误差与经典测量理论.md",
-    "💻 软件/markdown/markdown",
-    "💻 软件/MarkDown",
-    "🎓 学习/心理语言学",
     "🎓 学习/认知心理学/pic/视网膜结构2.png",
     "🎓 学习/认知心理学/pic/视网膜结构.png",
     "未命名 2.canvas",
