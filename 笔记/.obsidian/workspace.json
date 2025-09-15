@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "实践/实践.md",
+                "file": "MRI/常用软件/fMRIPrep.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "实践"
+              "title": "fMRIPrep"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "实践/实践.md",
+                "file": "MRI/常用软件/fMRIPrep.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "实践 的大纲"
+              "title": "fMRIPrep 的大纲"
             }
           }
         ],
@@ -169,25 +169,27 @@
   },
   "active": "0da0c6194c62741f",
   "lastOpenFiles": [
-    "💻 软件/MarkDown/MarkDown.md",
+    "实践/综述.md",
+    "MRI/常用软件/fMRIPrep.md",
+    "MRI/常用软件/FreeSurfer.md",
+    "MRI/常用软件/FSL.md",
+    "MRI/相关资料.md",
+    "MRI/质量控制/人工质控.md",
+    "MRI/质量控制/自动化质控.md",
+    "实践/时间表.md",
     "实践/实践.md",
+    "index.md",
+    "💻 软件/MarkDown/MarkDown.md",
     "💻 软件/Latex/Latex.md",
     "实践",
     "💻 软件/NeuroDebian/NeuroDebian.md",
     "MRI/常用工具/MRIQC.md",
     "💻 软件/NeuroDebian",
-    "MRI/相关资料.md",
-    "MRI/常用软件/FreeSurfer.md",
-    "MRI/常用软件/FSL.md",
     "MRI/常用软件/AFNI.md",
     "MRI/常用工具/dcm2niix.md",
     "MRI/常用工具/dcm2bids.md",
-    "MRI/常用软件/fMRIPrep.md",
     "MRI/常用软件/ANTs.md",
     "MRI/常用工具",
-    "MRI/质量控制/自动化质控.md",
-    "MRI/质量控制/人工质控.md",
-    "index.md",
     "MRI/质量控制",
     "MRI/常用软件",
     "MRI",
@@ -200,7 +202,6 @@
     "🎓 学习/心理测量与评估/第5章 测验的项目分析.md",
     "🎓 学习/心理测量与评估/第4章 效度.md",
     "🎓 学习/心理测量与评估/第2章 测量误差与经典测量理论.md",
-    "🎓 学习/心理测量与评估/第11章 能力测验II.md",
     "💻 软件/markdown/markdown",
     "💻 软件/MarkDown",
     "🎓 学习/心理语言学",
