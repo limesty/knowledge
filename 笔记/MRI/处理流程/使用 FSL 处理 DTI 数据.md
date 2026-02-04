@@ -1,6 +1,8 @@
+# 使用 FSL 处理 DTI 数据
+
 在以下处理过程中，处理时间默认为使用 Intel Core Ultra 9 285K 处理器与 Nvidia RTX 4060 显卡处理一例尺寸为 112x112x75 ，各向同性分辨率为 2 毫米，30个梯度方向的 DTI 数据时所需的时间。
 
-# DTI 数据组成
+## DTI 数据组成
 
 使用 `dcm2bids` 标准化数据结构后，在 `/sub-HC001/dwi` 文件夹中会出现以下文件：
 
@@ -14,7 +16,7 @@ sub-HC001_dwi.bvec
 如果另外采集了反向相位编码的数据，则还会出现对应的 `.nii.gz` 文件和 `.json` 文件。由于反向相位编码的数据在 $b=0$ 时采集，故没有对应的 `.bval` 文件和 `bvec` 文件。
 
 观察 `.json` 文件中的 `PhaseEncodingDirection` 字段，若为 `j` 则代表相位编码方向为 `PA`，若为`-j` 则代表相位编码方向为 `AP`。
-# topup
+## topup
 
 使用 `fslroi` 提取 `sub-HC001_dwi.nii.gz` 中 $b = 0$ 的图像
 
@@ -44,7 +46,7 @@ topup --imain=PA_AP --datain=acqparams.txt --config=b02b0.cnf --out=my_topup_res
 
 可以添加 `--nthr = n` 以使用多线程加速。单线程约需 4 分钟，多线程约需 1 分钟。`b02b0_4.cnf` 相对于 `b02b0_1.cnf` 约提升 30%。
 
-# eddy
+## eddy
 
 ```
 fslmaths my_hifi_b0 -Tmean my_hifi_b0
@@ -80,7 +82,7 @@ eddy --imain=sub-HC001_dwi.nii.gz --mask=my_hifi_b0_brain_mask --acqp=acqparams.
 
 当 `b-value` 较多时可以添加 `--data_is_shelled` 以避免报错。
 
-# dtifit
+## dtifit
 
 ```
 dtifit -k eddy_corrected_data.nii.gz -o dtifit_output -m hifi_b0_brain_mask.nii.gz -r eddy_corrected_data.eddy_rotated_bvecs -b sub-HC001_dwi.bval
@@ -106,7 +108,7 @@ dtifit_output_V3.nii.gz
 
 `dtifit` 运行时间约 1 分钟。
 
-# bedpostx
+## bedpostx
 
 `bedpostx` 需要在文件夹内准备以下四个文件：
 
@@ -134,12 +136,12 @@ bedpostx_gpu bedpostx_input_dir
 
 `bedpostx_gpu` 约需 12-15 分钟，若使用 `bedpostx` 则会自动调用所有可用的 CPU 核并行计算，服务器 20 核并行约需 1 小时。
 
-# 附录
+## 附录
 
-## 什么是同步多层扫描
+### 什么是同步多层扫描
 
 
-## 如何确定磁场梯度方向覆盖范围
+### 如何确定磁场梯度方向覆盖范围
 
 ```
 bvecs = load('bvecs'); % Assuming your filename is bvecs
