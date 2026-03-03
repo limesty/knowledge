@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MRI/处理流程/使用 FSL 处理 DTI 数据.md",
+                "file": "实践/实践.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "使用 FSL 处理 DTI 数据"
+              "title": "实践"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MRI/处理流程/使用 FSL 处理 DTI 数据.md",
+                "file": "实践/实践.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "使用 FSL 处理 DTI 数据 的大纲"
+              "title": "实践 的大纲"
             }
           }
         ],
@@ -170,18 +170,23 @@
   },
   "active": "0da0c6194c62741f",
   "lastOpenFiles": [
-    "实践/实践.md",
     "存档/浏览器书签.md",
     "科研实践/科研实践.md",
-    "MRI/常用工具/dcm2bids.md",
-    "MRI/常用工具/MRIQC.md",
-    "MRI/常用工具/dcm2niix.md",
     "MRI/常用软件/FSL.md",
     "MRI/常用软件/FreeSurfer.md",
     "MRI/常用软件/fMRIPrep.md",
     "MRI/常用软件/ANTs.md",
     "MRI/常用软件/AFNI.md",
+    "MRI/常用工具/Synb0.md",
+    "MRI/常用工具/MRIQC.md",
+    "MRI/常用工具/dcm2niix.md",
+    "MRI/常用工具/dcm2bids.md",
+    "MRI/相关资料.md",
     "MRI/处理流程/使用 FSL 处理 DTI 数据.md",
+    "rs-test-folder-Fd8ENblNQB4S279BK9DDe",
+    "rs-test-folder-dD3RJcTTBqigAIWw0rSCR",
+    "rs-test-folder-5CKWi2lbgK18jmtcd5oJ3",
+    "实践/实践.md",
     "未命名 4.base",
     "未命名 3.base",
     "未命名 2.base",
@@ -204,13 +209,8 @@
     "💻 软件/MarkDown/MarkDown.md",
     "🎓 学习/心理统计/第2章 次数分布.md",
     "🎓 学习/心理统计/第1章 统计和度量的基本概念.md",
-    "🎓 学习/心理统计/第0章 课程介绍.md",
-    "🎓 学习/心理测量与评估/第0章 课程介绍.md",
     "rs-test-folder-kMtO2gA79vb9S7YtyzVix",
     "MRI/处理流程",
-    "rs-test-folder-p8gfgZrWhmeGjgsxiN-zA",
-    "🎓 学习/社会心理学",
-    "🎓 学习/概率论与数理统计",
     "🎓 学习/认知心理学/pic/视网膜结构2.png",
     "🎓 学习/认知心理学/pic/视网膜结构.png",
     "未命名 2.canvas",

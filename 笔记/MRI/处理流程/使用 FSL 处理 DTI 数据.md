@@ -13,7 +13,7 @@ sub-HC001_dwi.bval
 sub-HC001_dwi.bvec
 ```
 
-如果另外采集了反向相位编码的数据，则还会出现对应的 `.nii.gz` 文件和 `.json` 文件。由于反向相位编码的数据在 $b=0$ 时采集，故没有对应的 `.bval` 文件和 `bvec` 文件。
+如果另外采集了反向相位编码的数据，则还会在 `/sub-HC001/fmap` 出现对应的 `.nii.gz` 文件和 `.json` 文件。由于反向相位编码的数据在 $b=0$ 时采集，可能没有对应的 `.bval` 文件和 `bvec` 文件。
 
 观察 `.json` 文件中的 `PhaseEncodingDirection` 字段，若为 `j` 则代表相位编码方向为 `PA`，若为`-j` 则代表相位编码方向为 `AP`。
 ## topup
@@ -78,6 +78,16 @@ eddy --imain=sub-HC001_dwi.nii.gz --mask=my_hifi_b0_brain_mask --acqp=acqparams.
 
 如果磁场梯度方向只覆盖半个球面，则需要添加 `--slm=linear` 参数。
 
+如果被试存在剧烈头动（如在一组切片的扫描过程中头部位置发生明显移动），可能会导致图像出现明显的锯齿状图案。此时需要使用 `eddy` 的切片到体积的校正。完整的运行命令如下所示：
+
+```
+eddy --imain=sub-HC001_dwi.nii.gz --mask=my_hifi_b0_brain_mask --acqp=acqparams.txt --index=index.txt --bvecs=sub-HC001_dwi.bvec --bvals=sub-HC001_dwi.bval --topup=my_topup_results --niter=8 --fwhm=10,8,4,2,0,0,0,0 --repol --json=my_json_file.json --out=eddy_corrected_data --mporder=16
+```
+
+其中 `--mporder` 的值介于 $N_{sl}/2$ 和 $N_{sl}/8$ 之间，其中 $N_{sl}$ 是数据的切片数。执行切片到体积的校正用时较长。
+
+`eddy` 还可以校正由于被试头部转动而产生的磁场变化，只需要添加 `--estimate_move_by_susceptibility` 即可。
+
 `eddy` 在可以调用 GPU 时将运行 `eddy_cuda`，否则运行 `eddy_cpu`。`eddy_cuda` 只能使用 CPU 单线程，`eddy_cpu` 可以指定多线程。`eddy_cuda` 约需 5 分钟。
 
 当 `b-value` 较多时可以添加 `--data_is_shelled` 以避免报错。
@@ -134,7 +144,7 @@ eddy_corrected_data.eddy_rotated_bvecs
 bedpostx_gpu bedpostx_input_dir
 ```
 
-`bedpostx_gpu` 约需 12-15 分钟，若使用 `bedpostx` 则会自动调用所有可用的 CPU 核并行计算，服务器 20 核并行约需 1 小时。
+`bedpostx_gpu` 约需 12 分钟，若使用 `bedpostx` 则会自动调用所有可用的 CPU 核并行计算，服务器 20 核并行约需 1 小时。
 
 ## 附录
 
@@ -142,6 +152,8 @@ bedpostx_gpu bedpostx_input_dir
 
 
 ### 如何确定磁场梯度方向覆盖范围
+
+在 matlab 中运行以下脚本：
 
 ```
 bvecs = load('bvecs'); % Assuming your filename is bvecs
