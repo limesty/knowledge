@@ -18,13 +18,11 @@ sub-HC001_dwi.bvec
 观察 `.json` 文件中的 `PhaseEncodingDirection` 字段，若为 `j` 则代表相位编码方向为 `PA`，若为`-j` 则代表相位编码方向为 `AP`。
 ## topup
 
-使用 `fslroi` 提取 `sub-HC001_dwi.nii.gz` 中 $b = 0$ 的图像
-
 ```
 fslroi sub-HC001_dwi.nii.gz PA 0 1 //此处提取的为第 1 张图像
 ```
 
-强烈推荐提取第一张 $b = 0$ 图像，
+使用 `fslroi` 提取 `sub-HC001_dwi.nii.gz` 中 $b = 0$ 的图像。强烈推荐提取第一张 $b = 0$ 图像。
 
 ```
 fslmerge -t PA_AP PA AP
@@ -144,12 +142,15 @@ eddy_corrected_data.eddy_rotated_bvecs
 bedpostx_gpu bedpostx_input_dir
 ```
 
-`bedpostx_gpu` 约需 12 分钟，若使用 `bedpostx` 则会自动调用所有可用的 CPU 核并行计算，服务器 20 核并行约需 1 小时。
+`bedpostx_gpu` 约需 12 分钟，若使用 `bedpostx` 则会自动调用所有可用的 CPU 核并行计算。
 
 ## 附录
 
 ### 什么是同步多层扫描
 
+同步多层扫描 (Simultaneous Multi-Slice, SMS) 技术，也叫多带 (Multiband) 技术，通过在一次射频激发中同时采集多个空间层面的数据，大幅缩短扫描时间。
+
+通常来说，采用这种技术的数据，其 `.json` 文件中的 `SliceTiming` 字段中会出现两个或以上相同的值，`MultibandAccelerationFactor` 的值为大于 1 的整数。
 
 ### 如何确定磁场梯度方向覆盖范围
 
